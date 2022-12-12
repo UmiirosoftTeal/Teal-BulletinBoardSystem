@@ -12,10 +12,10 @@ const routes = [
     }
   },
   {
-    path: '/about',
-    name: 'home',
+    path: '/new',
+    name: 'new',
     component: function () {
-      return import('../views/AboutView.vue')
+      return import('../views/NewView.vue')
     }
   }
 ]

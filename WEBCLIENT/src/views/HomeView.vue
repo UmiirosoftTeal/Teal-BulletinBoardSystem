@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <h3>タイムライン</h3>
     <for v-for="tweet in tweets" :key="tweet.id">
         <div class="card">
           <p class="username">{{ tweet.username }} id: {{ tweet.id }}</p>
@@ -40,7 +41,7 @@ export default {
     border-radius: 20px;
   }
   .username, .postdate {
-    font-size: 12px;
+    font-size: 14px;
     color: #9cb3af;
   }
 </style>

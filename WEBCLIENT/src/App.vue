@@ -1,21 +1,20 @@
 <template>
   <div id="app">
-    <!-- <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav> -->
     <header>
-      <h1>Teal BBS</h1>
-      <p>Prott Ver</p>
+      <h1><a href="/">Teal BBS</a></h1>
+      <p><router-link to="/new"><button class="createBtn">投稿を追加</button></router-link></p>
     </header>
     <main>
-      <h3>タイムライン</h3>
       <router-view />
     </main>
   </div>
 </template>
 
 <style>
+a {
+  text-decoration: none;
+  color: #bed8d1;
+}
 body,
 html {
   padding: 0;
@@ -33,13 +32,15 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 header h1 {
-  padding-left: 10px;
+  padding-left: 15px;
   font-size: 20px;
 }
 header p {
-  padding-right: 10px;
+  padding-right: 15px;
   font-size: 12px;
 }
 main {
@@ -47,5 +48,12 @@ main {
   padding: 3em 1em;
   margin: auto;
   line-height: 1.75;
+}
+.createBtn {
+  border: none;
+  background-color: #809b94;
+  padding: 10px;
+  color: #fff;
+  border-radius: 20px;
 }
 </style>
