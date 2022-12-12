@@ -2,7 +2,7 @@ import requests
 import sys
 from fabric.colors import green, blue
 
-url = "http://127.0.0.1"
+url = "https://teal-bbs.glitch.me"
 
 
 def timeLine():
