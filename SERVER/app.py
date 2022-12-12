@@ -4,7 +4,7 @@
 # This sourceCode is Teal's serverSystem.
 
 
-from flask import Flask, render_template, request, redirect, jsonify
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 
