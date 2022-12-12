@@ -39,13 +39,13 @@ class Post(db.Model):
 
 @app.route('/')
 def index():
-    timeline = Post.query.order_by(Post.id.asc()).all()
+    timeline = Post.query.order_by(Post.id.desc()).all()
     return jsonify(timeline)
 
 
 @app.route('/tweet/<int:id>')
 def tweet(id):
-    tweet = Post.query.filter_by(id=id).order_by(Post.id.asc()).all()
+    tweet = Post.query.filter_by(id=id).order_by(Post.id.desc()).all()
 
     return jsonify(tweet)
 
