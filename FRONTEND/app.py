@@ -12,11 +12,7 @@ def timeLine():
     i = 0
 
     while i != len(json):
-        RED = '\033[31m'
-        END = '\033[0m'
-
-        print()
-        print("| " + green(json[i]["username"]))
+        print("\n| " + green(json[i]["username"]), "id:", str(json[i]["id"]))
         print("| " + json[i]["tweet"])
         print("| " + blue(json[i]["postdate"]))
         i += 1
@@ -34,8 +30,8 @@ def noArg():
     print("\n 📂 入力された引数は存在しません...")
     print("\n----- ヘルプが必要ですか? -----\n")
     print(" 🌏 タイムラインを表示 ... tl")
-    print(" 📝 新しい投稿を作成 ... new")
-    print(" 💤 投稿を削除 ... del\n")
+    print(" 📝 新しい投稿を作成 ... new <username> <tweet>\n")
+    # print(" 💤 投稿を削除 ... del\n")
     print("-------------------------------\n")
 
 
